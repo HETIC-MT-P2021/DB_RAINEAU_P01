@@ -53,15 +53,9 @@ var routes = Routes{
 		HandlerFunc: controllers.RenderOrder,
 	},
 	Route{
-		Name:        "Get a shop by id",
+		Name: 		"Get all employes",
 		Method:      "GET",
-		Pattern:     "/shop/{id}",
-		HandlerFunc: controllers.RenderShop,
-	},
-	Route{
-		Name:        "Get a an employee by id",
-		Method:      "GET",
-		Pattern:     "/employee/{id}",
-		HandlerFunc: controllers.RenderEmployee,
+		Pattern:     "/employees",
+		HandlerFunc: controllers.RenderEmployees,
 	},
 }
